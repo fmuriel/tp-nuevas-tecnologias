@@ -1,0 +1,49 @@
+body {
+    background-image: url('images/black-wood-background.jpg')
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+h1 {
+    font-family: Raleway;
+    color: white;
+}
+
+#demo {
+    color: white;
+    font-family: Tahoma;
+    font-size: 40px;
+}
+
+img {
+    max-width: 25%;
+}
+
+.labels {
+    font-family: Raleway;
+    color: white;
+    margin-top: 10px;
+    font-weight: bold;
+}

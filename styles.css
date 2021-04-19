@@ -1,99 +1,120 @@
 @keyframes slideIn {
-  0% {
-    transform: translateX(-50px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
+    0% {
+        transform: translateX(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 body {
-  margin: 0;
-  padding: 0;
-  color: white;
-  background-color: #0b0b0b;
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
-  font-size: 1.5rem;
-  line-height: 2rem;
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-color: #0b0b0b;
+    font-family: "Roboto", "Noto Sans JP", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
 }
 
 h1 {
-  font-size: 10rem;
-  font-weight: bold;
-  color: #e8eb5c;
+    font-size: 10rem;
+    font-weight: bold;
+    color: #e8eb5c;
 }
 
 h2 {
-  font-size: 3rem;
-  font-weight: bold;
-  margin: 0 0 1.5rem 0;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0 0 1.5rem 0;
 }
 
 .subtitle {
-  color: #e8eb5c;
+    color: #e8eb5c;
 }
 
 .hero-h2 {
-  line-height: 4rem;
+    line-height: 4rem;
 }
 
 .first-p h2 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .hero-beer {
-  margin: 80vh 0 0 10rem;
-  animation: slideIn 1s forwards ease-in-out;
+    margin: 80vh 0 0 10rem;
+    animation: slideIn 1s forwards ease-in-out;
 }
 
 .hero {
-  height: 90vh;
-  border-bottom: 5px solid #e8eb5c;
-  background-image: url("./images/hero-background.jpg");
+    height: 90vh;
+    border-bottom: 5px solid #e8eb5c;
+    background-image: url("./images/hero-background.jpg");
 }
 
 section {
-  height: 50vh;
+    height: 50vh;
 }
 
 .section-organization {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 3rem 15rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 15rem;
 }
 
 .section-organization:nth-of-type(1) {
-  padding: 0 15rem;
+    padding: 0 15rem;
 }
 
 .section-organization div {
-  width: 50%;
+    width: 50%;
 }
 
 .section-invitation {
-  display: flex;
-  align-items: center;
-  background-image: url("./images/invitation.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    display: flex;
+    align-items: center;
+    background-image: url("./images/invitation.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .section-invitation div {
-  text-align: center;
-  padding: 3rem 15rem;
+    text-align: center;
+    padding: 3rem 15rem;
 }
 
 .contact-us {
-  border: 1px solid #e8eb5c;
-  padding: 0.5rem 1rem;
-  color: inherit;
-  text-decoration: inherit;
+    border: 1px solid #e8eb5c;
+    padding: 0.5rem 1rem;
+    color: inherit;
+    text-decoration: inherit;
 }
 
 .contact-us:hover {
-  color: #e8eb5c;
+    color: #e8eb5c;
+}
+
+#contactoMain {
+    background-image: url("./images/hero-background.jpg");
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Tahoma;
+}
+
+li a:hover {
+    background-color: #111;
 }
