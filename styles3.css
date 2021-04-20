@@ -1,6 +1,19 @@
-﻿nav {
-  /* border: 2px solid black; */
-  /* background-color: black; */
+﻿.variedades-container {
+  margin-bottom: 30rem;
+}
+
+.variedades-container a {
+  color: #e8eb5c;
+  text-decoration: none;
+}
+
+.logo-nav {
+  margin-top: 1rem;
+}
+
+.navigation-anchors a:hover,
+.logo-nav a:hover {
+  color: #eeeec6;
 }
 
 .navigation-anchors {
@@ -150,4 +163,13 @@ footer {
   font-size: 1.2rem;
   line-height: 2rem;
   text-align: justify;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #e8eb5c;
+  background-color: black;
+}
+
+.accordion-button:after {
+  color: white !important;
 }
