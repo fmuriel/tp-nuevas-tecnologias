@@ -137,7 +137,7 @@ footer {
 }
 
 .colorFondo {
-  background-image: url("../images/hero-background.jpg");
+    background-image: url("images/hero-background.jpg");
 }
 
 .formatoTitulo {
@@ -157,19 +157,70 @@ footer {
 }
 
 .accordion-text {
-  color: white;
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: lighter;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  text-align: justify;
+    color: white;
+    font-family: "Noto Sans JP", sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    text-align: justify;
 }
 
-.accordion-button:not(.collapsed) {
-  color: #e8eb5c;
-  background-color: black;
+.accordion-button-beer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1.25rem;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: 1.5rem;
+    color: #e8eb5c;
+    text-align: left;
+    background-color: transparent;
+    border: 1px solid #e8eb5c;
+    border-radius: 0;
+    overflow-anchor: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out, border-radius 0.15s ease;
 }
 
-.accordion-button:after {
-  color: white !important;
+.accordion-button-beer.collapsed {
+    border-bottom-width: 0;
+    background-color: black;
+}
+
+.accordion-button-beer:not(.collapsed) {
+    color: #e8eb5c;
+    background-color: black;
+}
+
+.accordion-button-beer:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='yellow'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    transform: rotate(180deg);
+}
+
+.accordion-button-beer::after {
+    flex-shrink: 0;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-left: auto;
+    content: "";
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='white'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform 0.2s ease-in-out;
+}
+
+.accordion-button-beer:focus {
+    z-index: 3;
+    border-color: #e8eb5c;
+    outline: 0;
+    box-shadow: 0 0 0 0.0rem;
+}
+
+.accordion-header-beer {
+    margin-bottom: 0;
+}
+
+.accordion-collapse-beer {
+    border: #e8eb5c;
+    border-width: 0 1px;
 }
