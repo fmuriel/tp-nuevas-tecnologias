@@ -382,3 +382,82 @@ footer {
 .section-variedades {
   padding: 5rem 0;
 }
+.section-contacto{
+  align-items: center;
+  background-image: url("../images/contacto-background-black.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.section-contacto h2 {
+  text-align: center;
+  padding: 1rem;
+}
+
+.section-contacto p {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.section-contacto div {
+  padding: 0.3em;
+}
+.section-contacto label {
+  text-align: left;
+  color: #e8eb5c;
+}
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+      bottom: 0;
+      opacity: 0;
+  }
+  to {
+      bottom: 30px;
+      opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+      bottom: 0;
+      opacity: 0;
+  }
+  to {
+      bottom: 30px;
+      opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+      bottom: 30px;
+      opacity: 1;
+  }
+  to {
+      bottom: 0;
+      opacity: 0;
+  }
+}

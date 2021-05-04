@@ -35,7 +35,7 @@
               <a href="#variedades">Variedades</a>
             </div>
             <div>
-              <a href="#">Contacto</a>
+              <a href="#contacto">Contacto</a>
             </div>
           </div>
         </div>
@@ -101,7 +101,6 @@
           <a class="contact-us" href="Contacto.html">Contactanos</a>
         </div>
       </section>
-
       <section class="section-variedades">
         <div class="variedades-container">
           <div class="variedades-title">
@@ -336,6 +335,59 @@
         </div>
       </section>
 
+      <section class="section-contacto">
+                    <a name="contacto" class="hide-anchor"></a>
+                    <h2 class="formato-titulo">Contacto</h2>
+                    <p>Completá el formulario con tus datos</p>
+                <div class="container">
+                  <div class="row space-between">
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                          <label>NOMBRE*:</label>
+                          <input id="nombre" type="text" class="form-control bg-dark text-white" />
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                        <label>APELLIDO*:</label>
+                          <input id="apellido" type="text" class="form-control bg-dark text-white" />
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                          <label>EMAIL*:</label>
+                          <input type="email" class="form-control bg-dark text-white" />
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                          <label>TEL.:</label>
+                          <input type="tel" class="form-control bg-dark text-white" />
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                          <label>CIUDAD:</label>
+                          <input type="text" class="form-control bg-dark text-white" />
+                      </div>
+                      <div class="col-sm-1 col-md-2 col-lg-3 mx-auto">
+                          <label>ASUNTO:</label>
+                          <select class="form-select bg-dark text-white">
+                              <option value="sugerencia">SUGERENCIA</option>
+                              <option value="consulta">CONSULTA</option>
+                              <option value="otro">OTRO</option>
+                          </select>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-sm-12 col-md-12 col-lg-11 mx-auto">
+                          <label>MENSAJE*:</label>
+                          <textarea class="form-control bg-dark text-white" name="" id="" rows="4"></textarea>
+                      </div>
+                  </div>
+                      
+                  <div class="row">
+                      <div class="col text-center">
+                          <button class="btn btn-dark" type="submit" onclick="mostrarMensaje()">ENVIAR</button>
+                          <div id="snackbar">Mensaje Enviado</div>
+                      </div>
+                  </div>
+                </div>
+            
+      </section>
       <div class="footer-basic">
         <footer>
           <div class="flex-container2">
@@ -374,4 +426,20 @@
       </div>
     </div>
   </body>
+  <script>
+      function mostrarMensaje() {
+          var nombre = document.getElementById("nombre").value;
+          var apellido = document.getElementById("apellido").value;
+          var x = document.getElementById("snackbar");
+  
+          x.value = 'El mensaje de ' + nombre + ' ' + apellido + 'fue enviado correctamente';
+          x.className = "show";
+          setTimeout(function() {
+              x.className = x.className.replace("show", "");
+          }, 3000);
+  
+          document.getElementById("nombre").value = "";
+          document.getElementById("apellido").value = "";
+      }
+  </script>
 </html>
